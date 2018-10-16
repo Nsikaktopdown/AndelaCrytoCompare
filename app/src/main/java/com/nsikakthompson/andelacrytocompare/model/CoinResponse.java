@@ -1,31 +1,23 @@
 package com.nsikakthompson.andelacrytocompare.model;
 
 import com.google.gson.annotations.SerializedName;
+import java.util.HashMap;
 
 /**
  * Created by Nsikak on 10/16/17.
  */
 
 public class CoinResponse {
-
     @SerializedName("BTC")
-    private BTC btc;
+    private HashMap<String, Double> btc;
     @SerializedName("ETH")
-    private ETH eth;
+    private HashMap<String, Double> eth;
 
-    public BTC getBtc() {
+    public HashMap<String, Double> getBtc() {
         return btc;
     }
 
-    public void setBtc(BTC btc) {
-        this.btc = btc;
-    }
-
-    public ETH getEth() {
+    public HashMap<String, Double> getEth() {
         return eth;
-    }
-
-    public void setEth(ETH eth) {
-        this.eth = eth;
     }
 }
