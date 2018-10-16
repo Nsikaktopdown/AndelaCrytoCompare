@@ -1,7 +1,7 @@
 package com.nsikakthompson.andelacrytocompare.model;
 
 import com.google.gson.annotations.SerializedName;
-import java.util.Map;
+import java.util.HashMap;
 
 /**
  * Created by Nsikak on 10/16/17.
@@ -9,15 +9,15 @@ import java.util.Map;
 
 public class CoinResponse {
     @SerializedName("BTC")
-    private Map<String, Double> btc;
+    private HashMap<String, Double> btc;
     @SerializedName("ETH")
-    private Map<String, Double> eth;
+    private HashMap<String, Double> eth;
 
-    public Map<String, Double> getBtc() {
+    public HashMap<String, Double> getBtc() {
         return btc;
     }
 
-    public Map<String, Double> getEth() {
+    public HashMap<String, Double> getEth() {
         return eth;
     }
 }
